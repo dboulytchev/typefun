@@ -3,8 +3,6 @@
 {-# LANGUAGE FlexibleContexts       #-}
 {-# LANGUAGE UndecidableInstances   #-}
 {-# LANGUAGE FunctionalDependencies #-}
-{-# LANGUAGE ScopedTypeVariables    #-}
-{-# LANGUAGE TypeFamilies           #-}
 
 -- A heterogenious list implementation.
 -- Heterogenious list ["1", 2, (), [3, 4, 5]] can
