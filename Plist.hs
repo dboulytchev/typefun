@@ -3,7 +3,6 @@
 {-# LANGUAGE FlexibleContexts       #-}
 {-# LANGUAGE UndecidableInstances   #-}
 {-# LANGUAGE FunctionalDependencies #-}
-{-# LANGUAGE OverlappingInstances   #-}
 {-# LANGUAGE ScopedTypeVariables    #-}
 {-# LANGUAGE TypeFamilies           #-}
 
@@ -25,7 +24,7 @@ class List l h t | l -> h t where
   len   :: l -> Integer
 
 -- nil is a hlist
-instance List () h t where
+instance List () () () where
   hd    _ = error "Empty list"
   tl    _ = error "Empty list"
   len   _ = 0
