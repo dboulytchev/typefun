@@ -6,6 +6,8 @@
 {-# LANGUAGE ScopedTypeVariables    #-}
 {-# LANGUAGE TypeFamilies           #-}
 
+module Zips where
+
 infixl 6 <<
 
 (<<) :: [a -> b] -> [a] -> [b]
