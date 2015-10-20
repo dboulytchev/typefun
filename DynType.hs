@@ -6,6 +6,7 @@
 {-# LANGUAGE TypeFamilies              #-}
 {-# LANGUAGE ExistentialQuantification #-}
 {-# LANGUAGE RankNTypes                #-}
+{-# LANGUAGE PolyKinds                 #-}
 
 module DynType where
 
