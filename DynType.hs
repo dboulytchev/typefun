@@ -8,7 +8,7 @@
 {-# LANGUAGE RankNTypes                #-}
 {-# LANGUAGE PolyKinds                 #-}
 
-module DynType where
+module DynType (Equal(Equal), TypeRepr((~~)), Dynamic((:::)), refl, trans, symm, list, p0, p1, arg, cod, dom, func, coerce, fromDyn) where
 
 data Equal a b = Equal (forall f . f a -> f b)
 
