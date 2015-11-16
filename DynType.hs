@@ -69,9 +69,10 @@ class TypeRepr tr where
 
 data Dynamic tr = forall a . a ::: tr a
 
+infix 5 :::
+
 fromDyn :: TypeRepr tr => tr a -> Dynamic tr -> Maybe a
 fromDyn e (x ::: a) = 
   case a ~~ e of
     Just w  -> Just $ coerce w x
     Nothing -> Nothing
-               

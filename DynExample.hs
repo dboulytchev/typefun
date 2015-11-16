@@ -39,7 +39,7 @@ unit = Unit refl
 list :: Type a -> Type [a]
 list a = List refl a
 
-infixr 5 .->.
+infixr 6 .->.
 
 (.->.) :: Type a -> Type b -> Type (a->b)
 a .->. b = Fun refl a b
